@@ -1,0 +1,92 @@
+
+
+<center><h1> Add Tech Request</h1><br>
+  <h2> Use this form to request any of the following technology services:</h2>
+  <ul>
+</center>
+<h3>NYU Technology Support</h3>
+    <li>Desktop Support</li>
+    <li>PC Install/Upgrade/Repair</li>
+    <li>Printer/Scanner/Copier Support</li>
+<br>
+
+<ol class="breadcrumb" id="formhead">
+  <li class="breadcrumb-item">
+      General Information
+  </li>
+</ol>
+<br>
+
+<form method = "POST" action="/addTech">
+  <div class="form-group">
+  <label class="mr-sm-2" for="requestor">Requestor:</label><input type="text" class="form-control" name="requestor">&nbsp;&nbsp;
+  </div>
+  <div class="form-group">
+  <label class="mr-sm-2" for="RequestorPhoneNumber">Requestor Phone Number:</label><input type="tel" class="form-control" id="RequestorPhoneNumber"  name="RequestorPhoneNumber">&nbsp;&nbsp;
+  </div>
+  <div class="form-group">
+  <label class="mr-sm-2" for="RequestorEmail">Requestor Email:</label><input type="email" class="form-control" id="RequestorEmail"  name="RequestorEmail">&nbsp;&nbsp;
+  </div>
+  <div class="form-group">
+  <label class="mr-sm-2" for="DepartmentName">Department Name:</label><input type="text" class="form-control" id="DepartmentName"  name="DepartmentName">&nbsp;&nbsp;
+  </div>
+  <div class="form-group">
+  <label class="mr-sm-2" for="Recipient">Recipient:</label><input type="text" class="form-control" id="Recipient"  name="Recipient">&nbsp;&nbsp;
+  </div>
+  <div class="form-group">
+  <label class="mr-sm-2" for="RecipientPhoneNumber">Recipient Phone Number:</label><input type="tel" class="form-control" id="RecipientPhoneNumber"  name="RecipientPhoneNumber">&nbsp;&nbsp;
+  </div>
+  <div class="form-group">
+  <label class="mr-sm-2" for="ServiceDescription">Service Description:</label><textarea class="form-control" id="ServiceDescription"  name="ServiceDescription" rows="3"></textarea>&nbsp;&nbsp;
+  </div>
+  <div class="form-group">
+  <label class="mr-sm-2"for="RequestCompletionDate">Request Completion Date:</label><input type="date" class="form-control" id="RequestCompletionDate" name="RequestCompletionDate">&nbsp;&nbsp;
+  </div>
+
+  <ol class="breadcrumb" id="formhead">
+    <li class="breadcrumb-item">
+        Service Selection
+    </li>
+  </ol>
+  <br>
+  <ol class="breadcrumb" id=formsub>
+    <li class="breadcrumb-item">
+        Technology Support Services:
+    </li>
+  </ol>
+  <div class="form-group">
+   <label for="exampleFormControlSelect1">Service Type</label>
+   <select name="servtype" class="form-control" id="servtype">
+     <option value="Cable/TV">Cable/TV</option>
+     <option value="Cell Phone">Cell Phone</option>
+     <option value="Computer Setup">Computer Setup</option>
+     <option value="Email">Email</option>
+     <option value="Employee">Employee</option>
+     <option value="Faculty">Faculty</option>
+     <option value="Fax Line">Fax Line</option>
+     <option value="Filing">Filing</option>
+     <option value="Internet">Internet</option>
+     <option value="iPad">iPad</option>
+     <option value="Long Distance Code">Long Distance Code</option>
+     <option value="Multimedia">Multimedia</option>
+     <option value="Network Connectivity">Network Connectivity</option>
+     <option value="Office">Office</option>
+     <option value="Others">Others</option>
+     <option value="PC Upgrade/Install/Repair">PC Upgrade/Install/Repair</option>
+     <option value="Peripheral">Peripheral</option>
+     <option value="Pitney Bowes">Pitney Bowes</option>
+     <option value="Presentation Setup">Presentation Setup</option>
+     <option value="Scanner/Copier/Printer">Scanner/Copier/Printer</option>
+     <option value="Security">Security</option>
+     <option value="Server">Server</option>
+     <option value="Software">Software</option>
+     <option value="StarRez">StarRez</option>
+     <option value="Telephone">Telephone</option>
+   </select>
+   <label for="exampleFormControlSelect1">Category</label>
+ <select class="form-control" name="category" id="cat">
+     <option value="">-- select one -- </option>
+ </select>
+</div>
+   <br><br> <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,37 @@
+<form method = "GET" action="/techrequests">
+  <h1 align="center">Tech Requests</h1>
+</form>
+<center>
+<input id="tbsearch" class="form-control" oninput="w3.filterHTML('#techtable', '#sort', this.value)">
+</center>
+<br><br>
+<table id="techtable">
+<tr>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(1)')">Requestor<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(2)')">Requestor Phone Number<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(3)')">Requestor Email<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(4)')">Department Name<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(5)')">Recipient<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(6)')">Recipient Phone Number<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(7)')">Service Description<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(8)')">Request Completion Date<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(9)')">Service Type<i class="fa fa-fw fa-sort"></i></th>
+<th onclick="w3.sortHTML('#techtable','#sort', 'td:nth-child(10)')">Category<i class="fa fa-fw fa-sort"></i></th>
+</tr>
+{{#each techRequests}}
+  <tr id="sort">
+    <td>{{requestor}}</td>
+    <td>{{RequestorPhoneNumber}}</td>
+    <td>{{RequestorEmail}}</td>
+    <td>{{DepartmentName}}</td>
+    <td>{{Recipient}}</td>
+    <td>{{RecipientPhoneNumber}}</td>
+    <td>{{ServiceDescription}}</td>
+    <td>{{RequestCompletionDate}}</td>
+    <td>{{ServiceType}}</td>
+    <td>{{Category}}</td>
+  </tr>
+{{/each}}
+</table>
+<center>
+<br><br><button type="button" class="btn btn-success"><a id="add" href="/addTech">Add Tech Request</a></button>

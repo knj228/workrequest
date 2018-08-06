@@ -1,0 +1,36 @@
+<form method = "GET" action="/telerequests">
+  <h1 align="center">Tele Requests</h1>
+</form>
+<center>
+<input id="tbsearch" id="inputValidation" placeholder="Search" class="form-control" oninput="w3.filterHTML('#teletable', '#sort', this.value)">
+<br><br>
+</center>
+<table id="teletable">
+  <tr>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(1)')">Requestor<i class="fa fa-fw fa-sort"></i></th>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(2)')">Requestor Phone Number<i class="fa fa-fw fa-sort"></i></th>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(3)')">Requestor Email<i class="fa fa-fw fa-sort"></i></th>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(4)')">Department Name<i class="fa fa-fw fa-sort"></i></th>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(5)')">Recipient<i class="fa fa-fw fa-sort"></i></th>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(6)')">Recipient Phone Number<i class="fa fa-fw fa-sort"></i></th>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(7)')">Service Description<<i class="fa fa-fw fa-sort"></i></th>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(8)')">Request Completion Date<i class="fa fa-fw fa-sort"></i></th>
+  <th onclick="w3.sortHTML('#teletable','#sort', 'td:nth-child(9)')">Tele Service<i class="fa fa-fw fa-sort"></i></th>
+</tr>
+{{#each teleRequests}}
+  <tr id="sort">
+    <td>{{teleRequestor}}</td>
+    <td>{{teleRequestorPhoneNumber}}</td>
+    <td>{{teleRequestorEmail}}</td>
+    <td>{{teleDepartmentName}}</td>
+    <td>{{teleRecipient}}</td>
+    <td>{{teleRecipientPhoneNumber}}</td>
+    <td>{{teleServiceDescription}}</td>
+    <td>{{teleRequestCompletionDate}}</td>
+    <td>{{teleServ}}</td>
+
+  </tr>
+{{/each}}
+</table>
+<center>
+<br><br><button type="button" class="btn btn-success"><a id="add" href="/addTele">Add Tele Request</a></center>

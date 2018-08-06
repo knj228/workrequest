@@ -1,0 +1,82 @@
+ table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+h1,h3{
+  font-family: "Gotham A","Gotham B", sans-serif;
+}
+
+.btn btn-success{
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 16px Arial;
+}
+
+#formhead.breadcrumb{
+  background-color: #8c54b0;
+  color: #fff;
+  width: 55%;
+}
+
+.breadcrumb{
+  width: 98%;
+}
+
+#formsub.breadcrumb{
+  width: 40%;
+}
+.imgbox a
+{
+  width: 150px;
+  height: 40px;
+	background: url(../img/servicelink.png) no-repeat;
+}
+.imgbox a:hover
+{
+	background: url(../img/servicelinkhover.png) no-repeat;
+}
+#tbsearch.form-control {
+  width: 50%;
+  padding-bottom: 10px;
+}
+.form-group input{
+  width: 50%;
+}
+
+.form-group textarea{
+  width: 50%;
+}
+
+#add{
+  color: #fff
+}
+
+.form-group select{
+  width: 50%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bg-nyu {
+    background-color: #492e79;
+}
