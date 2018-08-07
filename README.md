@@ -1,2 +1,2 @@
-# workrequest
+# NYU IT Work Request App
 Working as an IT Specialist, keeping track of work requests can be a tough which is why often a database system is used. NYU has their own system called ServiceLink which keeps track of not just tech work requests but many other requests which is why I made a system specifically for the requests that my boss and I encounter on a daily basis. This app uses HTML,CSS,SCSS,Javascript,NodeJS, ExpressJS,Bootstrap,Mongoose,Handlebars,W3.css and Jquery
