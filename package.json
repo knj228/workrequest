@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nyu-csci-ua-0480-007-fall-2017/knj228-homework05.git"
+    "url": "git+https://github.com/knj228/workrequest.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nyu-csci-ua-0480-007-fall-2017/knj228-homework05/issues"
+    "url": "https://github.com/knj228/workrequest/issues"
   },
-  "homepage": "https://github.com/nyu-csci-ua-0480-007-fall-2017/knj228-homework05#readme",
+  "homepage": "https://github.com/knj228/workrequest#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
